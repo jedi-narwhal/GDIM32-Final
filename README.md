@@ -1,11 +1,11 @@
 # GDIM32-Final
 
 ## Check-In
-### Team Member Name 1
+### Sonia Mangat
 Put your individual check-in Devlog here.
-### Team Member Name 2
+### Milla Lucido
 Put your individual check-in Devlog here.
-### Team Member Name 3
+### Minjoo Shin
 Put your individual check-in Devlog here.
 
 
@@ -14,11 +14,11 @@ Put your individual check-in Devlog here.
 Put your group Devlog here.
 
 
-### Team Member Name 1
+### Sonia Mangat
 Put your individual final Devlog here.
-### Team Member Name 2
+### Milla Lucido
 Put your individual final Devlog here.
-### Team Member Name 3
+### Minjoo Shin
 Put your individual final Devlog here.
 
 ## Open-Source Assets
