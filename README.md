@@ -23,3 +23,4 @@ Put your individual final Devlog here.
 
 ## Open-Source Assets
 Cite any open-source assets here. Put them in a LIST, and use correctly formatted LINKS.
+[Wasteland Cabin Assets](https://assetstore.unity.com/packages/3d/environments/urban/wasteland-cabin-94865)
