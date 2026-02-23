@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private GameObject _startMenu;
     void Start()
     {
-        
+        _startMenu.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GameStart()
     {
-        
+        _startMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Debug.Log("Game Start");
     }
 }
