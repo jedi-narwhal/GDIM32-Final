@@ -14,7 +14,7 @@ public class player : MonoBehaviour
     void Start()
     {
         _cameraTrans = Camera.main.transform;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
