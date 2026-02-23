@@ -5,7 +5,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
 
-        private Transform _cameraTrans;
+    private Transform _cameraTrans;
     private float _rotationX;
     private float _rotationY;
     [SerializeField] private float _moveSpeed;
