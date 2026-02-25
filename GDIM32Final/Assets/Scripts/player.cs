@@ -38,4 +38,32 @@ public class player : MonoBehaviour
             * _moveSpeed * Time.deltaTime
         );
     }
+
+public static player Instance { get; private set; }
+
+
+    private void Awake() {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+
+        }
+        Instance = this;
+    }
+
+    public delegate void Delegate();
+    public event Delegate Click;
+
+
+
+
+
+    public void OnMouseOver()
+    {
+        //code click
+        Click?.Invoke();
+
+
+    }
 }

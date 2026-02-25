@@ -1,18 +1,22 @@
 using System.Collections;
+using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField] private TMP_Text _timerText;
+    float time = 5f;
+    
     void Update()
     {
-        
+        time -= Time.deltaTime;
+        _timerText.text = time.ToString("F2");
+
+        if (time <= 0)
+        {
+            Debug.Log("Time Over");
+            gameObject.SetActive(false);
+        }
     }
 }
