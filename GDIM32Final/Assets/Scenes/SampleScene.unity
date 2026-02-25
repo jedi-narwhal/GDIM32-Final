@@ -3001,8 +3001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startMenu: {fileID: 504491859}
-  _gameoverMenu: {fileID: 0}
-  _dialogue: {fileID: 0}
+  _gameoverMenu: {fileID: 1853885439}
+  _dialogue: {fileID: 265537019}
 --- !u!4 &1990370760
 Transform:
   m_ObjectHideFlags: 0
