@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Checklist : MonoBehaviour
 {
-    private bool _isItemAvailable = false;
+    /*private bool _isItemAvailable = false;
     public Button _inventory;
     public GameObject _battery;
     public GameObject _key;
@@ -23,5 +23,5 @@ public class Checklist : MonoBehaviour
         //nothing is in the inventory or the player didn't click anything useful --> no changes
         //gameObject.SetActive(False);
 
-    }
+    }*/
 }
