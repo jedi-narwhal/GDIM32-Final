@@ -6,7 +6,8 @@ public class Checklist : MonoBehaviour
 {
     private bool _isItemAvailable = false;
     public Button _inventory;
-    public GameObject _item;
+    public GameObject _battery;
+    public GameObject _key;
     
     void Start()
     {
@@ -20,5 +21,7 @@ public class Checklist : MonoBehaviour
     {
         //if item was clicked, _isItemAvailable = true, and stores the item
         //nothing is in the inventory or the player didn't click anything useful --> no changes
+        //gameObject.SetActive(False);
+
     }
 }
