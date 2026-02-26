@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class key : MonoBehaviour
+public class key : items
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,10 @@ public class key : MonoBehaviour
     void Update()
     {
         
+    }
+
+     public override void Pickup()
+    {
+        base.Pickup();
     }
 }

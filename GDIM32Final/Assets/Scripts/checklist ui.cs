@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class battery : items
+public class checklistui : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,10 +14,5 @@ public class battery : items
     void Update()
     {
         
-    }
-
-    public override void Pickup()
-    {
-        base.Pickup();
     }
 }
