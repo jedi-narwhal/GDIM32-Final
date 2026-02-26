@@ -75,7 +75,7 @@ protected Animator _animator;
 
        
     }
-    private void   PlayAgitatedAnimation()
+    private void PlayAgitatedAnimation()
     {
      _animator.SetBool("agitated", true);
       _animator.SetBool("angry", false);

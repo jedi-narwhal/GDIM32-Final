@@ -59,7 +59,7 @@ public static player Instance { get; private set; }
 
 
 
-    public void OnMouseOver()
+    public void OnCLick()
     {
         //code click
         Click?.Invoke();
