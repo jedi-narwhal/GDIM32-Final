@@ -11,8 +11,8 @@ public class player : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
 
-    bool _hasKey = false;
-    bool _hasBattery = false;
+    public bool _hasKey = false;
+    public bool _hasBattery = false;
     // Start is called before the first frame update
     void Start()
     {
