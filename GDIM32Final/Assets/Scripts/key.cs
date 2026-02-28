@@ -20,5 +20,6 @@ public class key : items
     {
         base.Pickup();
         player.Instance._hasKey = true;
+        gameObject.SetActive(false);
     }
 }
