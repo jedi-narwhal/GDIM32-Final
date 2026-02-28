@@ -13,6 +13,29 @@ public class player : MonoBehaviour
 
     public bool _hasKey = false;
     public bool _hasBattery = false;
+
+
+
+    //--------------------------------------- Singleton ---------------------------------------
+
+        public static player Instance { get; private set; }
+
+
+    private void Awake() {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+
+        }
+        Instance = this;
+    }
+
+    public delegate void Delegate();
+    public event Delegate Click;
+
+    //------------------------------------------------------------------------------------------
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,25 +64,6 @@ public class player : MonoBehaviour
             * _moveSpeed * Time.deltaTime
         );
     }
-
-public static player Instance { get; private set; }
-
-
-    private void Awake() {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-            return;
-
-        }
-        Instance = this;
-    }
-
-    public delegate void Delegate();
-    public event Delegate Click;
-
-
-
 
 
     public void OnCLick()
