@@ -19,5 +19,6 @@ public class key : items
      public override void Pickup()
     {
         base.Pickup();
+        player.Instance._hasKey = true;
     }
 }

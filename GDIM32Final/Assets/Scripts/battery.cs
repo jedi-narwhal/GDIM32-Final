@@ -19,5 +19,6 @@ public class battery : items
     public override void Pickup()
     {
         base.Pickup();
+        player.Instance._hasBattery = true;
     }
 }
