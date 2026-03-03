@@ -282,6 +282,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &205372602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205372599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c97e0fd18ed947018606685f577b7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer: 100
+  _player: {fileID: 1526321737}
+  _calm: 70
+  _agitated: 30
+  _angry: 0
 --- !u!1 &265537019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1696,7 @@ Transform:
   m_GameObject: {fileID: 712531341}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.0784837, y: 2.154, z: 0.373}
+  m_LocalPosition: {x: -0.61, y: 0.84, z: 0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2240,9 +2257,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5378483675290762544, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_Name
       value: LittleCat_Angry
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567745586909956680, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalScale.x
@@ -2996,6 +3021,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3019161775642865684, guid: 2d6867d6e54753f449d2768e3269e3a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1688516034}
+    - targetCorrespondingSourceObject: {fileID: 3019161775642865684, guid: 2d6867d6e54753f449d2768e3269e3a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1688516036}
   m_SourcePrefab: {fileID: 100100000, guid: 2d6867d6e54753f449d2768e3269e3a9, type: 3}
 --- !u!4 &1688516032 stripped
 Transform:
@@ -3045,6 +3073,27 @@ MonoBehaviour:
   _battery: {fileID: 1688516033}
   _key: {fileID: 0}
   _door: {fileID: 0}
+--- !u!95 &1688516036
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688516033}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6e6ef955c7976640885c2e66af9e157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1723197554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3053,9 +3102,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5382164314986747481, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6672876400658009786, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
       propertyPath: m_Name
       value: Apartment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571406437619638561, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8967685698144842308, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3105,6 +3162,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5758638062047188596, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
       insertIndex: -1
       addedObject: {fileID: 205372601}
+    - targetCorrespondingSourceObject: {fileID: 5758638062047188596, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 205372602}
   m_SourcePrefab: {fileID: 100100000, guid: d25fb2dd12e02b3489256e56844f7922, type: 3}
 --- !u!1 &1757245209
 GameObject:
