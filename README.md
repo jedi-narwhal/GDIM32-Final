@@ -53,3 +53,5 @@ Cite any open-source assets here. Put them in a LIST, and use correctly formatte
 - [Door Sounds](http://assetstore.unity.com/packages/audio/sound-fx/foley/door-cabinets-lockers-free-257610) - Door Sound Effects
 - [Casual SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116) - Pick Up Sound
 - [Ash Valley Cybernetics](https://assetstore.unity.com/packages/audio/sound-fx/ash-valley-cybernetics-lite-108327#content) - Fail Alarm Sound
+- [Flaticon key icon](https://www.flaticon.com/free-icon/key_807292?term=key&page=1&position=1&origin=search&related_id=807292) - Key icon (inventory)
+- [Flaticon battery icon](https://www.flaticon.com/free-icon/full-battery_88067?term=battery&page=1&position=82&origin=search&related_id=88067) - Battery icon (inventory)
