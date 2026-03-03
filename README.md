@@ -5,25 +5,11 @@
 The inclusion of the vector math technique we used was raycasting. This is when a vector math technique projects an invisible line defined by an origin point and a direction into a 3D scene to test for intersections with geometry. Raycasting lets the player click on 3D objects to pick them up. When the left mouse button is pressed, ScreenPointToRay converts the 2D mouse position into a 3D ray shooting out from the camera, and Physics. Raycast fires that ray up to 100 units to check if it hits any collider. If it does, the code checks whether the hit object has an items component, and if so, calls Pickup() on it. Essentially, the ray acts as a laser pointer from the camera through the cursor into the world, bridging 2D screen space and 3D world space so the player can interact with objects through simple mouse clicks. 
 ### Sonia Mangat
 What I contributed
-- Player script (including movement)
-- Raycast_items script
-- Items script
-- Battery,key, and bunny script
-- Set up components and scripts for the raycast and battery gameobjects
+First, I setup the methods and completed the Player script (including movement). I then set the Raycast_items script so that it can click the items. I also set put the items script and the inheritance and the polymopshism for that script. The items script is the parent class. I setup the child script that inherit from items which is the Battery and key script. I also setup the bunny script which is our finite state machine. I also set up the components and scripts for the raycast and battery gameobjects.
 
 
  Break-down 
-- Very useful, very good reference point
-- I also like how I could refer back to our proposal for the system architecture part
-- System Architecture for the code breakdown (constructing the design patterns such as finite state machines, singletons, events, MVC, etc.)
-- General breakdown
-
-
- Changed
-- Work more collaboratively on code
-- Flesh out the code method and systems in pseudocode before we just code stuff
-- Code review at least one time a week
-- Don’t use google doc as a progress tracker
+Overall, I thought the breakdown was very useful and very good reference point.I also like how I could refer back to our proposal for the system architecture part. Specifcually,the system Architecture for the code breakdown (constructing the design patterns such as finite state machines, singletons, events, MVC, etc.) Here is what I would change. First, we work more collaboratively on code. This is because I tried to implement the design patterns and people kept changing them. Next, we should flesh out the code method and systems in pseudocode before we just code stuff entirely before doing anything else. A way to solve this is to do code review at least one time a week. I also think we shouldn't have used a google doc as a progress tracker.
 
 ### Milla Lucido
 What I worked on:
