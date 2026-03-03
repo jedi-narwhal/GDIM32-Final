@@ -4,7 +4,23 @@
 ### Team Devlog
 The inclusion of the vector math technique we used was raycasting. This is when a vector math technique projects an invisible line defined by an origin point and a direction into a 3D scene to test for intersections with geometry. Raycasting lets the player click on 3D objects to pick them up. When the left mouse button is pressed, ScreenPointToRay converts the 2D mouse position into a 3D ray shooting out from the camera, and Physics. Raycast fires that ray up to 100 units to check if it hits any collider. If it does, the code checks whether the hit object has an items component, and if so, calls Pickup() on it. Essentially, the ray acts as a laser pointer from the camera through the cursor into the world, bridging 2D screen space and 3D world space so the player can interact with objects through simple mouse clicks. 
 ### Sonia Mangat
-Put your individual check-in Devlog here.
+What I contributed
+- Player script (including movement)
+- Raycast_items script
+- Items script
+- Battery,key, and bunny script
+- Set up components and scripts for the raycast and battery gameobjects
+Break-down 
+- Very useful, very good reference point
+- I also like how I could refer back to our proposal for the system architecture part
+- System Architecture for the code breakdown (constructing the design patterns such as finite state machines, singletons, events, MVC, etc.)
+- General breakdown
+Changed
+- Work more collaboratively on code
+- Flesh out the code method and systems in pseudocode before we just code stuff
+- Code review at least one time a week
+- Don’t use google doc as a progress tracker
+
 ### Milla Lucido
 What I worked on:
 I worked a lot in the prefabs and materials sections to make the scene and walls work. The apartment prefab was the biggest trouble because the original materials I was going to use were not going to work so I had to redo a lot of my work when I decided that it was not worth it, but it turned out much better. I also put in the agitated and angry bool parameters in the cat’s animator. I also made the rotation animations for the cat so that it moves more like an actual security camera. I made the battery rotate slightly and increase in scale by 0.5 so that it is more noticeable to players, though that will be changed later when the objects only appear when talked to by the cat. I made the audio manager and put in all of the audios that we are using in our project. I made it so that the camera moves with the player more naturally and does not look like a fishbowl effect. I also put in a skybox at the request of an LA. 
