@@ -4,7 +4,15 @@
 ### Sonia Mangat
 Put your individual check-in Devlog here.
 ### Milla Lucido
-Put your individual check-in Devlog here.
+What I worked on:
+I worked a lot in the prefabs and materials sections to make the scene and walls work. The apartment prefab was the biggest trouble because the original materials I was going to use were not going to work so I had to redo a lot of my work when I decided that it was not worth it, but it turned out much better. I also put in the agitated and angry bool parameters in the cat’s animator. I also made the rotation animations for the cat so that it moves more like an actual security camera. I made the battery rotate slightly and increase in scale by 0.5 so that it is more noticeable to players, though that will be changed later when the objects only appear when talked to by the cat. I made the audio manager and put in all of the audios that we are using in our project. I made it so that the camera moves with the player more naturally and does not look like a fishbowl effect. I also put in a skybox at the request of an LA. 
+
+The breakdown was very useful because I was very quickly able to take stock of what I needed to both build the scene and what audios we decided on. I was able to keep going back to it to remember exactly what we discussed in the planning to most accurately replicate what we decided as a team was good for the project. 
+
+If I had to do this again, a Google Doc would not be my favorite choice of progress tracking. It is not the most convenient, but it is what we decided at the beginning, so we are stuck with it for now. Other than that, Discord and Messages were often used to update the other team members, and that was a good means of information passing. 
+
+If there was something I would improve on for future project planning, it would likely be splitting up tasks more effectively. A lot of how our project made it hard to know when others were working in Unity so that we did not also work in unity so even just making a more effective and clear schedule would be a much better system. 
+
 ### Minjoo Shin
 I contributed to this project’s UI system and inventory. I created all UI canvases and the inventory canvas.
 UI manager
