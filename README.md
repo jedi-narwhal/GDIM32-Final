@@ -10,11 +10,15 @@ What I contributed
 - Items script
 - Battery,key, and bunny script
 - Set up components and scripts for the raycast and battery gameobjects
+
+
 Break-down 
 - Very useful, very good reference point
 - I also like how I could refer back to our proposal for the system architecture part
 - System Architecture for the code breakdown (constructing the design patterns such as finite state machines, singletons, events, MVC, etc.)
 - General breakdown
+
+
 Changed
 - Work more collaboratively on code
 - Flesh out the code method and systems in pseudocode before we just code stuff
