@@ -1,6 +1,8 @@
 # GDIM32-Final
 
 ## Check-In
+### Team Devlog
+The inclusion of the vector math technique we used was raycasting. This is when a vector math technique projects an invisible line defined by an origin point and a direction into a 3D scene to test for intersections with geometry. Raycasting lets the player click on 3D objects to pick them up. When the left mouse button is pressed, ScreenPointToRay converts the 2D mouse position into a 3D ray shooting out from the camera, and Physics. Raycast fires that ray up to 100 units to check if it hits any collider. If it does, the code checks whether the hit object has an items component, and if so, calls Pickup() on it. Essentially, the ray acts as a laser pointer from the camera through the cursor into the world, bridging 2D screen space and 3D world space so the player can interact with objects through simple mouse clicks. 
 ### Sonia Mangat
 Put your individual check-in Devlog here.
 ### Milla Lucido
