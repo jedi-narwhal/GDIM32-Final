@@ -63,7 +63,6 @@ Put your individual final Devlog here.
 Put your individual final Devlog here.
 
 ## Open-Source Assets
-Cite any open-source assets here. Put them in a LIST, and use correctly formatted LINKS.
 - [Wasteland Cabin Assets](https://assetstore.unity.com/packages/3d/environments/urban/wasteland-cabin-94865) - House Sprites
 - [Stuffed Animal Asset](https://assetstore.unity.com/packages/3d/characters/animals/little-friends-cartoon-animals-lite-262505) - Stuffed Cat Sprites
 - [Camera Asset](https://assetstore.unity.com/packages/3d/props/surveillance-camera-264577) - Camera Sprite
@@ -75,3 +74,6 @@ Cite any open-source assets here. Put them in a LIST, and use correctly formatte
 - [Ash Valley Cybernetics](https://assetstore.unity.com/packages/audio/sound-fx/ash-valley-cybernetics-lite-108327#content) - Fail Alarm Sound
 - [Flaticon key icon](https://www.flaticon.com/free-icon/key_807292?term=key&page=1&position=1&origin=search&related_id=807292) - Key icon (inventory)
 - [Flaticon battery icon](https://www.flaticon.com/free-icon/full-battery_88067?term=battery&page=1&position=82&origin=search&related_id=88067) - Battery icon (inventory)
+- [Yughues Free Architectural Materials](https://assetstore.unity.com/packages/2d/textures-materials/yughues-free-architectural-materials-13234) - Floor, Tile, and ceiling materials
+- [AllSky Free - 10 Sky / Skybox Set](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014) - Skybox
+- [MY Real Materials Free](https://assetstore.unity.com/packages/2d/textures-materials/my-real-materials-free-202253) - Wall Material
