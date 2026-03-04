@@ -2650,6 +2650,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1782822181}
+    - targetCorrespondingSourceObject: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782822183}
   m_SourcePrefab: {fileID: 100100000, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
 --- !u!1 &1114296314
 GameObject:
@@ -3822,6 +3825,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1782822183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782822179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea74a8239ed3e3b449506f97a3fdbc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionDistance: 2
+  _interactionPromptSprite: {fileID: 0}
+  _thoughtBubble: {fileID: 0}
+  _dialogue: {fileID: 0}
+  _dialogueStartNode: {fileID: 11400000, guid: 004b3c8b8170bab478a3b118c0307669, type: 2}
 --- !u!1 &1823569827
 GameObject:
   m_ObjectHideFlags: 0
