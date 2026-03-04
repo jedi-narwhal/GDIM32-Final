@@ -15,4 +15,5 @@ public class door : MonoBehaviour
     {
         
     }
+    //if player has key == truce and click on door- play audio and show win screen/diable timer and player
 }
