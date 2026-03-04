@@ -20,6 +20,6 @@ public class battery : items
     {
         base.Pickup();
         player.Instance._hasBattery = true;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

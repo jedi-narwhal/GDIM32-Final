@@ -66,11 +66,5 @@ public class player : MonoBehaviour
     }
 
 
-    public void OnCLick()
-    {
-        //code click
-        Click?.Invoke();
 
-
-    }
 }

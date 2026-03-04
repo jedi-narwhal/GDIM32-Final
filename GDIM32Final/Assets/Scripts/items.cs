@@ -27,8 +27,10 @@ public abstract class items : MonoBehaviour
     public  virtual void Pickup()
     {
         //Inventory.instance.AddItem(itemName);
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
         //is this how we want to set up the inventory
+        
+
     }
 
 }
