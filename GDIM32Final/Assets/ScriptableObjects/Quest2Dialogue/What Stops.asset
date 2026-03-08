@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28ec7985f9c8c814f9c899f0bd9916df, type: 3}
-  m_Name: DialogueStart
+  m_Name: What Stops
   m_EditorClassIdentifier: 
-  _lines: []
+  _lines:
+  - 'The bomb that will kill you if you attempt to grab me by force. '
   _thoughtBubbleSprite: {fileID: 0}
-  _playerReplyOptions: []
-  _npcReplies: []
+  _playerReplyOptions:
+  - Ok sure.
+  _npcReplies:
+  - {fileID: 11400000, guid: 63247d8213bcd8c4d883cdda92398f43, type: 2}
