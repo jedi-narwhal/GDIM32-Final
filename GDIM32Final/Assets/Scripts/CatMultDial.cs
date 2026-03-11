@@ -12,6 +12,7 @@ public class CatMultDial : MonoBehaviour
     [SerializeField] private Image _thoughtBubble;
     [SerializeField] private DialogueUI _dialogue;
     [SerializeField] private DialogueNode _dialogueStartNode;
+    [SerializeField] private GameObject _battery;
 
     private DialogueNode _currentNode;
     private int _currentLine = 0;
@@ -78,6 +79,7 @@ public class CatMultDial : MonoBehaviour
         _currentLine = 0;
         _dialogue.HideDialogue();
         _thoughtBubble.gameObject.SetActive(false);
+        _battery.gameObject.SetActive(true);
     }
 
     public void SelectedOption(int option)

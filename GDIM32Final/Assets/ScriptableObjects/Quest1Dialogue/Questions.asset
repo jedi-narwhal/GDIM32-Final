@@ -18,10 +18,8 @@ MonoBehaviour:
   _playerReplyOptions:
   - What are you?
   - How many tasks?
-  - What is the timer for?
   - Nah I'm good.
   _npcReplies:
   - {fileID: 11400000, guid: e39a8ee1b38d9c54f9eec26d4545d3a9, type: 2}
   - {fileID: 11400000, guid: b29b9015e9fe78b4299317ada4495703, type: 2}
-  - {fileID: 11400000, guid: 43e5b798bc4c71f44868cafeedff4870, type: 2}
   - {fileID: 11400000, guid: a93234403b160ca4eb33d4c3f852ee9e, type: 2}
