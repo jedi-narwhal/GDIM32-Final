@@ -46,10 +46,6 @@ public class CatMultDial : MonoBehaviour
               //  EndDialogue();
             }
         }
-        /*else
-        {
-            EndDialogue();
-        }*/
     }
 
     private void AdvanceDialogue()
