@@ -13,11 +13,11 @@ public class door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // Opendoor();
+  
     }
-   void Openddoor()
+   public void OpenDoor()
     {
-        //if (_hasKey == true && )
+        //if (player.Instance._hasKey == true && )
     }
-    //if player has key == truce and click on door- play audio and show win screen/diable timer and player
+  // show win screen/diable timer and player
 }
