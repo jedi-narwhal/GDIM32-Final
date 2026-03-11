@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public abstract class items : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public abstract class items : MonoBehaviour
 //[SerializeField] private GameObject _battery;
 //[SerializeField] private GameObject _key;
 //[SerializeField] private GameObject _door;
+    //public delegate void ObjectClicked();
+    //public event ObjectClicked click;
 
 
     // Start is called before the first frame update
@@ -24,13 +28,10 @@ public abstract class items : MonoBehaviour
 
     }
 
-    public  virtual void Pickup()
+    public virtual void Pickup()
     {
-        //Inventory.instance.AddItem(itemName);
         gameObject.SetActive(false);
-        //is this how we want to set up the inventory
-        
-
+       // click?.Invoke();
     }
 
 }

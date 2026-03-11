@@ -31,8 +31,11 @@ public class player : MonoBehaviour
         Instance = this;
     }
 
-    public delegate void Delegate();
-    public event Delegate Click;
+    public delegate void Onclick();
+    public event Onclick Click;
+
+    public delegate void Done();
+    public event Done EndGame;
 
     //------------------------------------------------------------------------------------------
     
@@ -63,6 +66,15 @@ public class player : MonoBehaviour
             ((vertical * Vector3.forward) + (horizontal * Vector3.right))
             * _moveSpeed * Time.deltaTime
         );
+    }
+  public void InvokeClick()
+    {
+        Click?.Invoke();
+    }
+
+  public void InvokeEndGame()
+    {
+        EndGame?.Invoke();
     }
 
 

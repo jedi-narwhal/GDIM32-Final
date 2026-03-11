@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class raycast_item : MonoBehaviour
 {
+ 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,8 @@ public class raycast_item : MonoBehaviour
                 if (item != null)
                 {
                     item.Pickup();
+                    player.Instance.InvokeClick();
+
                 }
 
             }
