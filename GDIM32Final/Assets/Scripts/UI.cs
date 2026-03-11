@@ -9,7 +9,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject _gameoverMenu;
 
     [SerializeField] private GameObject _dialogue;
-    void Start()
+    void Awake()
     {
         _startMenu.SetActive(true);
     }

@@ -5,7 +5,7 @@ public class DialogueNode : ScriptableObject
 {
     // the lines of dialogue the NPC says for this node
     public string[] _lines;
-    public Sprite _thoughtBubbleSprite;
+    //public Sprite _thoughtBubbleSprite;
 
     // the potential replies from the player
     public string[] _playerReplyOptions;

@@ -10,7 +10,7 @@ public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text _npcText;
     [SerializeField] private GameObject _npcDialogue;
-    [SerializeField] private GameObject _playerOptions;
+    //[SerializeField] private GameObject _playerOptions;
     [SerializeField] private GameObject _playerMultiOptions;
     [SerializeField] private TMP_Text _option1;
     [SerializeField] private TMP_Text _option2;
@@ -21,7 +21,7 @@ public class DialogueUI : MonoBehaviour
         gameObject.SetActive(true);
 
         _npcDialogue.SetActive(true);
-        _playerOptions.SetActive(false);
+        //_playerOptions.SetActive(false);
         _playerMultiOptions.SetActive(false);
 
         _npcText.text = dialogue;
@@ -32,7 +32,7 @@ public class DialogueUI : MonoBehaviour
         gameObject.SetActive(true);
 
         _npcDialogue.SetActive(false);
-        _playerOptions.SetActive(true);
+        //_playerOptions.SetActive(true);
         _playerMultiOptions.SetActive(false);
     }
 
@@ -43,7 +43,7 @@ public class DialogueUI : MonoBehaviour
         gameObject.SetActive(true);
 
         _npcDialogue.SetActive(false);
-        _playerOptions.SetActive(false);
+        //_playerOptions.SetActive(false);
         _playerMultiOptions.SetActive(true);
 
         _option1.text = options[0];
@@ -71,7 +71,7 @@ public class DialogueUI : MonoBehaviour
 
     public void HideDialogue()
     {
-        _playerOptions.SetActive(false);
+        //_playerOptions.SetActive(false);
         _npcDialogue.SetActive(false);
         gameObject.SetActive(false);
     }
