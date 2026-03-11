@@ -7,9 +7,9 @@ using UnityEngine;
 public abstract class items : MonoBehaviour
 {
 
-[SerializeField] private GameObject _battery;
-[SerializeField] private GameObject _key;
-[SerializeField] private GameObject _door;
+//[SerializeField] private GameObject _battery;
+//[SerializeField] private GameObject _key;
+//[SerializeField] private GameObject _door;
 
 
     // Start is called before the first frame update
