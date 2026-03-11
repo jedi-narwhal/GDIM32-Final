@@ -4110,7 +4110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 3
-  _mouseSensitivity: 7
+  _mouseSensitivity: 4
   _hasKey: 0
   _hasBattery: 0
 --- !u!136 &1526321734
