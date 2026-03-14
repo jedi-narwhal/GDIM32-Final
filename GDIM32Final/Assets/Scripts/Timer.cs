@@ -6,7 +6,9 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private TMP_Text _timerText;
-    float time = 5f;
+
+    [SerializeField] private GameObject _gameOverMenu;
+    public float time = 5f;
     
     void Update()
     {
@@ -17,6 +19,7 @@ public class Timer : MonoBehaviour
         {
             Debug.Log("Time Over");
             gameObject.SetActive(false);
+            _gameOverMenu.SetActive(true);
         }
     }
 }

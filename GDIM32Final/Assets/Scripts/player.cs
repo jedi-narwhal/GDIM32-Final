@@ -18,7 +18,7 @@ public class player : MonoBehaviour
 
     //--------------------------------------- Singleton ---------------------------------------
 
-        public static player Instance { get; private set; }
+    public static player Instance { get; private set; }
 
 
     private void Awake() {
