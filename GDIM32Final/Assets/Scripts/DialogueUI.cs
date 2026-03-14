@@ -16,6 +16,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text _option2;
     [SerializeField] private TMP_Text _option3;
 
+    private bool _dialogueOver = false;
+
     public void ShowDialogue(string dialogue)
     {
         gameObject.SetActive(true);
