@@ -24,6 +24,7 @@ public class UI : MonoBehaviour
 
     public void GameOver()
     {
+        Time.timeScale = 0f;
         _gameoverMenu.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

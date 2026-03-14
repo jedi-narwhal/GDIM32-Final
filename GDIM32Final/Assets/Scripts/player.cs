@@ -37,6 +37,8 @@ public class player : MonoBehaviour
     public delegate void Done();
     public event Done EndGame;
 
+    public UI _ui;
+
     //------------------------------------------------------------------------------------------
     
     // Start is called before the first frame update

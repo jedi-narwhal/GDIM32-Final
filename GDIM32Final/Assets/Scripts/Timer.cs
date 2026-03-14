@@ -7,8 +7,9 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private TMP_Text _timerText;
 
-    [SerializeField] private GameObject _gameOverMenu;
+    //[SerializeField] private GameObject _gameOverMenu;
     public float time = 5f;
+
     
     void Update()
     {
@@ -19,7 +20,7 @@ public class Timer : MonoBehaviour
         {
             Debug.Log("Time Over");
             gameObject.SetActive(false);
-            _gameOverMenu.SetActive(true);
+            player.Instance._ui.GameOver();
         }
     }
 }
