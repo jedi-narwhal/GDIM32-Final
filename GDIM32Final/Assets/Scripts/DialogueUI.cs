@@ -18,6 +18,10 @@ public class DialogueUI : MonoBehaviour
 
     public bool _dialogueOver = false;
 
+    public void Awake()
+    {
+        gameObject.SetActive(false);
+    }
     public void ShowDialogue(string dialogue)
     {
         gameObject.SetActive(true);

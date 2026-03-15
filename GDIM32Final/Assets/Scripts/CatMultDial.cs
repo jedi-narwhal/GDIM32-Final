@@ -35,6 +35,7 @@ public class CatMultDial : MonoBehaviour
 
             if (!_waitingForPlayerResponse && Input.GetKeyDown(KeyCode.Space))
             {
+                player.Instance._dialogueUI.gameObject.SetActive(true);
                 AdvanceDialogue();
             }
             else if (!_runningDialogue)
