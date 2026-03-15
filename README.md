@@ -46,7 +46,13 @@ Put your individual final Devlog here.
 ### Milla Lucido
 Put your individual final Devlog here.
 ### Minjoo Shin
-Put your individual final Devlog here.
+I contributed to the final project after the check-in by fixing the errors with the UI system. As Milla finished programming the stuffed animal's dialogues, I created a _dialogueOver boolean variable to start the timer when the dialogue finishes. I used the player script's singleton for the timer, disabling it before the dialogue so the game won’t pause while the player investigates the whole scene. Moreover, I created the method Restart() in the UI (UI manager) script for the game-over canvas, allowing the player to restart the game by clicking anywhere on the game-over screen. To prevent the game from moving after the game-over screen, I set Time.timeScale = 0f in the GameOver() method to pause the game.
+
+
+In the check-in assignment, it was more important to verify that all elements were working properly. I didn’t organize the UI system, disable dialogue boxes, or the inventory. However, for better gameplay, I used gameObject.SetActive(false) to hide unnecessary elements on the game start screen and enable them when needed. The dialogue box, timer text, and inventory boxes appeared on the game start screen, indicating they were activated when the player started and progressed through the game. I used the Awake() method to disable all unnecessary UI icons and then re-enable them. (For example, Awake() method in dialogue UI script)
+
+
+The UI had a problem with the anchor because I forgot to optimize each UI icon's anchor when creating the canvas in Unity. Therefore, I aligned the anchor to the UI images and buttons so they wouldn’t look awkward across different resolutions. 
 
 ## Open-Source Assets
 - [Wasteland Cabin Assets](https://assetstore.unity.com/packages/3d/environments/urban/wasteland-cabin-94865) - House Sprites
