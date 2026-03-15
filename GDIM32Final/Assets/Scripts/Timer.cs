@@ -10,11 +10,17 @@ public class Timer : MonoBehaviour
     //[SerializeField] private GameObject _gameOverMenu;
     public float time = 5f;
 
+
+    void Awake()
+    {
+        _timerText.enabled = false;
+    }
     
     void Update()
     {
         if (player.Instance._dialogueUI._dialogueOver == true)
         {
+            _timerText.enabled = true;
             time -= Time.deltaTime;
             _timerText.text = time.ToString("F2");
         }
