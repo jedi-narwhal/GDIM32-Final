@@ -13,8 +13,12 @@ public class Timer : MonoBehaviour
     
     void Update()
     {
-        time -= Time.deltaTime;
-        _timerText.text = time.ToString("F2");
+        if (player.Instance._dialogueUI._dialogueOver == true)
+        {
+            time -= Time.deltaTime;
+            _timerText.text = time.ToString("F2");
+        }
+        
 
         if (time <= 0)
         {

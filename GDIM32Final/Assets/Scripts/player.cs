@@ -38,6 +38,7 @@ public class player : MonoBehaviour
     public event Done EndGame;
 
     public UI _ui;
+    public DialogueUI _dialogueUI;
 
     //------------------------------------------------------------------------------------------
     
