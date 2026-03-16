@@ -414,6 +414,9 @@ MonoBehaviour:
   _thoughtBubble: {fileID: 1957051682}
   _dialogue: {fileID: 741522571}
   _dialogueStartNode: {fileID: 11400000, guid: 21d5d1c698ce9a742b8108071275ce63, type: 2}
+  _hasBatteryStartNode: {fileID: 11400000, guid: 74eed00683838124d98701193f7b0717, type: 2}
+  _battery: {fileID: 1688516033}
+  _key: {fileID: 177641533}
 --- !u!1 &289584367
 GameObject:
   m_ObjectHideFlags: 0
