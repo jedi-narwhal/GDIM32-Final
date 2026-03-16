@@ -15,8 +15,8 @@ MonoBehaviour:
   _lines:
   - Hello Apartment #202 Resident,  I have been sent here by a special someone to
     play a game.
+  _thoughtBubbleSprite: {fileID: 0}
   _playerReplyOptions:
-  - What?
   - What?
   _npcReplies:
   - {fileID: 11400000, guid: 004b3c8b8170bab478a3b118c0307669, type: 2}

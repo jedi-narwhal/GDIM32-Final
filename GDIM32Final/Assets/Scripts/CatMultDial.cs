@@ -8,8 +8,8 @@ using UnityEngine.Assertions;
 public class CatMultDial : MonoBehaviour
 {
     [SerializeField] private float _interactionDistance = 2.0f;
-    //[SerializeField] private Sprite _interactionPromptSprite;
-    //[SerializeField] private Image _thoughtBubble;
+    [SerializeField] private Sprite _interactionPromptSprite;
+    [SerializeField] private Image _thoughtBubble;
     [SerializeField] private DialogueUI _dialogue;
     [SerializeField] private DialogueNode _dialogueStartNode;
     //[SerializeField] private GameObject _battery;
@@ -31,7 +31,7 @@ public class CatMultDial : MonoBehaviour
 
         if (Vector3.Distance(transform.position, player.Instance.transform.position) < _interactionDistance)
         {
-            //_thoughtBubble.gameObject.SetActive(true);
+            _thoughtBubble.gameObject.SetActive(true);
 
             if (!_waitingForPlayerResponse && Input.GetKeyDown(KeyCode.Space))
             {
@@ -40,7 +40,7 @@ public class CatMultDial : MonoBehaviour
             }
             else if (!_runningDialogue)
             {
-                //_thoughtBubble.sprite = _interactionPromptSprite;
+                _thoughtBubble.sprite = _interactionPromptSprite;
             }
             else
             {
@@ -53,7 +53,7 @@ public class CatMultDial : MonoBehaviour
     {
         _timerstart = false;
         _runningDialogue = true;
-        //_thoughtBubble.sprite = _currentNode._thoughtBubbleSprite;
+        _thoughtBubble.sprite = _currentNode._thoughtBubbleSprite;
 
         if (_currentLine < _currentNode._lines.Length)
         {
@@ -84,7 +84,7 @@ public class CatMultDial : MonoBehaviour
         _currentNode = _dialogueStartNode;
         _currentLine = 0;
         _dialogue.HideDialogue();
-        //_thoughtBubble.gameObject.SetActive(false);
+        _thoughtBubble.gameObject.SetActive(false);
         //_battery.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
