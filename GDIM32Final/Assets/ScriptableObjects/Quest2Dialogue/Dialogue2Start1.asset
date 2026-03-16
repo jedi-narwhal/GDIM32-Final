@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lines:
   - Good job finding me a battery! That's task 1 completed. Up next, find the key
-    to get out of your apartment and bring it back to me!
+    to get out of your apartment!
   _thoughtBubbleSprite: {fileID: 0}
   _playerReplyOptions:
-  - Why would I bring it back to you?
+  - Why do I need to find my own key?
   - Why does my door lock from inside?
   - Ok sure.
   _npcReplies:

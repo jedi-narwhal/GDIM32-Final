@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Bring Back
   m_EditorClassIdentifier: 
   _lines:
-  - 'Because it''s not your real key silly, just the one I placed so you could find
-    it. It is much less of a game if you don''t find all of the things!  '
+  - Because it's not your real key silly, just the one I placed so you could find
+    it. It is much less of a game if you don't find all of the things!  Don't worry    
+    though once you find it, I'll switch it right back automatically for you.
   _thoughtBubbleSprite: {fileID: 0}
   _playerReplyOptions:
   - Then where is my key?
