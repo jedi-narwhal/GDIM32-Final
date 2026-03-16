@@ -12,17 +12,27 @@ public class CatMultDial : MonoBehaviour
     [SerializeField] private Image _thoughtBubble;
     [SerializeField] private DialogueUI _dialogue;
     [SerializeField] private DialogueNode _dialogueStartNode;
-    //[SerializeField] private GameObject _battery;
+    [SerializeField] private DialogueNode _hasBatteryStartNode;
+    [SerializeField] private GameObject _battery;
+    [SerializeField] private GameObject _key;
 
     private DialogueNode _currentNode;
     private int _currentLine = 0;
     private bool _runningDialogue;
     private bool _waitingForPlayerResponse;
     private bool _timerstart;
+    private bool keyspawn;
+    private bool batteryspawn;
+
+    private void Awake()
+    {
+        _key.SetActive(false);
+        _battery.SetActive(false);
+    }
 
     private void Start()
     {
-        _currentNode = _dialogueStartNode;
+        _currentNode = _dialogueStartNode;        
     }
 
     private void Update()
@@ -35,6 +45,10 @@ public class CatMultDial : MonoBehaviour
 
             if (!_waitingForPlayerResponse && Input.GetKeyDown(KeyCode.Space))
             {
+                if (!_runningDialogue)
+                {
+                    SetDialogue();
+                }
                 player.Instance._dialogueUI.gameObject.SetActive(true);
                 AdvanceDialogue();
             }
@@ -54,6 +68,12 @@ public class CatMultDial : MonoBehaviour
         _timerstart = false;
         _runningDialogue = true;
         _thoughtBubble.sprite = _currentNode._thoughtBubbleSprite;
+
+        if (_currentNode == _dialogueStartNode &&_battery != null && !batteryspawn) 
+        {
+            _battery.SetActive(true);
+            batteryspawn = true;
+        }
 
         if (_currentLine < _currentNode._lines.Length)
         {
@@ -81,11 +101,19 @@ public class CatMultDial : MonoBehaviour
     {
         _runningDialogue = false;
         _waitingForPlayerResponse = false;
-        _currentNode = _dialogueStartNode;
+
+        if(player.Instance._hasBattery && !keyspawn) 
+        {
+            _key.SetActive(true);
+            keyspawn = true;
+        }
+
+        SetDialogue();
         _currentLine = 0;
+
         _dialogue.HideDialogue();
         _thoughtBubble.gameObject.SetActive(false);
-        //_battery.gameObject.SetActive(true);
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -98,5 +126,17 @@ public class CatMultDial : MonoBehaviour
         _currentNode = _currentNode._npcReplies[option];
 
         AdvanceDialogue();
+    }
+
+    public void SetDialogue() 
+    {
+        if (player.Instance != null && player.Instance._hasBattery)
+        {
+            _currentNode = _hasBatteryStartNode;
+        }
+        else 
+        {
+            _currentNode = _dialogueStartNode;
+        }
     }
 }
