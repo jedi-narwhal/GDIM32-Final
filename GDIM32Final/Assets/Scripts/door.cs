@@ -6,7 +6,7 @@ using TMPro;
 public class door : MonoBehaviour
 
 {
-     public bool _hasKey = false;
+
     [SerializeField] private GameObject _gameoverMenu;
     [SerializeField]  public TMP_Text _lockedText;    
     // Start is called before the first frame update
