@@ -33,7 +33,7 @@ public class door : MonoBehaviour
     {
         if  (player.Instance._hasKey && player.Instance._hasBattery)
         {
-            _gameoverMenu.SetActive(true);
+  
             player.Instance._ui.GameWin();
             //Time.timeScale = 0f;
              
