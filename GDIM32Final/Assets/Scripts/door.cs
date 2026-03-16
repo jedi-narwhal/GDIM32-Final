@@ -28,7 +28,7 @@ public class door : MonoBehaviour
 
    void OnMouseUpAsButton()
     {
-        if  (player.Instance._hasKey)
+        if  (player.Instance._hasKey && player.Instance._hasBattery)
         {
             _gameoverMenu.SetActive(true);
             player.Instance._ui.GameWin();
