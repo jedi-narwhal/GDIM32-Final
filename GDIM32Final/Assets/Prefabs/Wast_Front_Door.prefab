@@ -151,6 +151,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d106ae9cbd748e9ad6007c2c92a2b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hasKey: 0
   _gameoverMenu: {fileID: 0}
   _lockedText: {fileID: 0}
