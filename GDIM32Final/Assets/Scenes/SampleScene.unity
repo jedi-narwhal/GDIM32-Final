@@ -1957,8 +1957,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clicksound: {fileID: 675847206}
-  _endsound: {fileID: 675847205}
+  _endsound: {fileID: 675847207}
   _player: {fileID: 1526321733}
+  _door: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
