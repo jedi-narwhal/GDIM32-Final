@@ -31,8 +31,8 @@ public class door : MonoBehaviour
         if  (player.Instance._hasKey)
         {
             _gameoverMenu.SetActive(true);
-            player.Instance._ui.GameOver();
-            Time.timeScale = 0f;
+            player.Instance._ui.GameWin();
+            //Time.timeScale = 0f;
              
         }
         else
