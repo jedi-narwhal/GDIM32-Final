@@ -5499,7 +5499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startMenu: {fileID: 504491859}
   _gameoverMenu: {fileID: 1853885439}
-  _gamewinMenu: {fileID: 0}
+  _gamewinMenu: {fileID: 413423301}
   _inventoryBattery: {fileID: 2137921017}
   _inventoryKey: {fileID: 1306507076}
 --- !u!4 &1990370760
