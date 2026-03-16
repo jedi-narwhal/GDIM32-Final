@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class door : MonoBehaviour
 
 {
      public bool _hasKey = false;
     [SerializeField] private GameObject _gameoverMenu;
-    [SerializeField] public GameObject _lockedtext;
+    [SerializeField]  public TMP_Text _lockedText;    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +37,10 @@ public class door : MonoBehaviour
         }
         else
         {
-             _lockedtext.SetActive(true);      
+            _lockedText.text = "You need a key!";
+            _lockedText.gameObject.SetActive(true);
+
+     
         }
     }
 }
