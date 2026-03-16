@@ -10,7 +10,7 @@ public class audiomanager : MonoBehaviour
     [SerializeField] private AudioSource _endsound;
   
     [SerializeField] private player _player;
-
+   [SerializeField] private GameObject _door;
 
     void Start()
     {

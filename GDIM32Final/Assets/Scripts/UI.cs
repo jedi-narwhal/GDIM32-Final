@@ -47,6 +47,7 @@ public class UI : MonoBehaviour
         _gamewinMenu.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        player.Instance.InvokeEndGame();
         Debug.Log("Game Win");
     }
 
