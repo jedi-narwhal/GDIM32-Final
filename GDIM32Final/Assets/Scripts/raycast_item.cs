@@ -17,26 +17,29 @@ public class raycast_item : MonoBehaviour
     void Update()
     {
 
-
         if (Input.GetMouseButtonDown(0))
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100f))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            GameObject clickedObject = hit.collider.gameObject;
 
-    
-            if (Physics.Raycast(ray, out hit, 100f)) 
+            items item = hit.collider.GetComponent<items>();
+            if (item != null)
             {
- 
-                GameObject clickedObject = hit.collider.gameObject;
-               items item = hit.collider.GetComponent<items>();
-                if (item != null)
-                {
-                    item.Pickup();
-                    player.Instance.InvokeClick();
+                item.Pickup();
+                player.Instance.InvokeClick();
+            }
 
-                }
-
+            // ✅ Now inside the raycast block
+            door doorScript = hit.collider.GetComponent<door>();
+            if (doorScript != null)
+            {
+                doorScript.OpenDoor();
             }
         }
+    }
     }
 }

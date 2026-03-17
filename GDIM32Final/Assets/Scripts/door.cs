@@ -20,16 +20,11 @@ public class door : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            OnMouseUpAsButton();
+            OpenDoor();
         }
     }
-   public void OpenDoor()
-    {
-        //if (player.Instance._hasKey == true && )
-    }
-  // show win screen/diable timer and player
 
-   void OnMouseUpAsButton()
+    public void OpenDoor()
     {
         if  (player.Instance._hasKey && player.Instance._hasBattery)
         {
