@@ -38,7 +38,14 @@ The first plan was to make an inventory, which is similar to GDIM 31’s 2D fina
 
 ## Final Submission
 ### Group Devlog
-Put your group Devlog here.
+The Finite State Machine comes from the timer and the stuffed animal. The stuffed animal will have three states of calm, agitated, and angry that will tie to the amount of time left in the game. When the timer is very high, the calm state will be in play, which will connect to the stuffed animal's appearance and animation. After a certain time from the timer, the stuffed animal's state will change to the agitated state, and it will make the stuffed animal appear slightly darker with a more animated appearance. When the timer is only a bit from running out, the stuffed animal will change to an angry state and trigger a wild animation with a very dark color. The Finite State Machine is used for this because it is the state in use that triggers the changes in both animation and sprite renderer for the game object attached to the stuffed animal script. To explain, in UpdateState(), you set the parameters for the state to be updated based on the state provided in the enum through the member variable. In RunState(), depending on the state which state it is in, they will run the state and tell you what animation to play based on the state.
+
+
+The singleton pattern will be used to manage events and coordinate various classes. Singleton allows us to manage code without SerializeField, which helps reduce tight coupling in the Player class. Singletons decouple multiple code paths, enhancing code readability and reducing errors from hard-coding. The singleton is the player who will invoke the event that, when the items have been picked up, will cause everything subscribed to update. For example, there are singletons in the player called Click and Endgame. Both of them are hooked up to the audio and different audio clips will play based on different events. For the UI, the player class's locator system was used to connect multiple boolean values to turn on/off the appropriate game screen. It’s useful to use serializefield to connect multiple game objects to the class, but it's difficult to manipulate them together. Thus, I used the singleton design pattern to lessen redundant code that might cause errors later. For example, the checklist UI class is manipulated to show the icons by using the player.Instance._hasbattery (key) boolean variable. 
+
+
+Inheritance will be used to manage the item’s action. Inheritance allows us to manage multiple items that share the same methods. In our project, the items, including the key and the battery, share the same method when they are picked and used. Both of them have a PickUp() method in the class. In this method, when the item is clicked, the game object disappears so it can be added to the inventory. Thus, it’s better to use parent abstract methods, as they reduce code redundancy by allowing the same method to be implemented for two different items. 
+
 
 
 ### Sonia Mangat
