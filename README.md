@@ -44,7 +44,7 @@ Put your group Devlog here.
 ### Sonia Mangat
 Put your individual final Devlog here.
 ### Milla Lucido
-Put your individual final Devlog here.
+Since the Check-In, I made the dialogue trees so that the first would play without any item booleans true and the second would play after the battery boolean was true. I also added the space to interact with the cat button so that players would know how to interact with the cat. I made it so that the cat dialogue wouldn’t reset whenever space was pressed to progress the dialogue. I added a key and a door collider so that the key could be picked up and so that the door couldn’t be as glitchy. I changed the door to work on the right win screen. I changed the timer duration so that the game would be playable at a better pace and made sure that the respective items of battery and item would only become active after their dialogue sequence played.
 ### Minjoo Shin
 I contributed to the final project after the check-in by fixing the errors with the UI system. As Milla finished programming the stuffed animal's dialogues, I created a _dialogueOver boolean variable to start the timer when the dialogue finishes. I used the player script's singleton for the timer, disabling it before the dialogue so the game won’t pause while the player investigates the whole scene. Moreover, I created the method Restart() in the UI (UI manager) script for the game-over canvas, allowing the player to restart the game by clicking anywhere on the game-over screen. To prevent the game from moving after the game-over screen, I set Time.timeScale = 0f in the GameOver() method to pause the game.
 
