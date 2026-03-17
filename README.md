@@ -42,7 +42,7 @@ Put your group Devlog here.
 
 
 ### Sonia Mangat
-Put your individual final Devlog here.
+I first fixed up our event and singleton issue with the items. I also made revisions on making sure the items script in terms of better designing our inheritance for that one. I also completed the audio manager script which handles 2 events from the player. I also completed the door script that manages the door opening.
 ### Milla Lucido
 Since the Check-In, I made the dialogue trees so that the first would play without any item booleans true and the second would play after the battery boolean was true. I also added the space to interact with the cat button so that players would know how to interact with the cat. I made it so that the cat dialogue wouldn’t reset whenever space was pressed to progress the dialogue. I added a key and a door collider so that the key could be picked up and so that the door couldn’t be as glitchy. I changed the door to work on the right win screen. I changed the timer duration so that the game would be playable at a better pace and made sure that the respective items of battery and item would only become active after their dialogue sequence played.
 ### Minjoo Shin
