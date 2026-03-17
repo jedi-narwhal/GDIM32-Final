@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timerText: {fileID: 1655998443}
-  time: 45
+  time: 240
 --- !u!4 &322801422
 Transform:
   m_ObjectHideFlags: 0
@@ -4063,7 +4063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 3
-  _mouseSensitivity: 4
+  _mouseSensitivity: 2
   _hasKey: 0
   _hasBattery: 0
   _ui: {fileID: 1990370759}
